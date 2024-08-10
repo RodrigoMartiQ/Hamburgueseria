@@ -1,4 +1,4 @@
-import BurguerCard from "../components/burger-card/burger-card";
+import BurguerCard from "../../components/burger-card/burger-card";
 import style from "./style.module.css";
 
 function Menu() {
