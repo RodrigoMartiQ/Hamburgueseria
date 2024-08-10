@@ -1,0 +1,118 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .imagenhero {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    max-width: var(--maxwidth);
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 0px 0px 50px 50px ;
+  }
+  
+  .all {
+    width: 100%;
+    height: 100%;
+    max-width: var(--maxwidth);
+    border-radius: 0px 0px 40px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    padding: 0px 40px;
+  }
+  
+  .letras {
+    height: auto;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .titulo {
+    max-width: 100%;
+    font-size: 50px;
+    color: white;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  
+  .parrafo{
+    font-size: 16px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  .boton {
+    text-decoration: none;
+    border-radius: 20px;
+    border: #1b55c9;
+    background-color: #1b55c9;
+    height: 60px;
+    width: 170px;
+    color: white;
+    font-size: 21px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .boton:hover {
+    cursor: url("/imagenes/marce1.png"), auto;
+    background-color: #4973b198;
+  }
+  
+  @media (max-width: 860px) {
+    .all {
+      justify-content: center;
+    }
+  }
+  
+  @media (max-width: 650px) {
+    .letras {
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .titulo {
+      font-size: 40px;
+    }
+  }
+  
+  @media screen and (max-width: 500px) {
+    .letras {
+      width: 400px;
+    }
+  
+    .titulo {
+      font-size: 34px;
+    }
+  
+    .parrafo {
+      font-size: 18px;
+    }
+  
+    .boton {
+      height: 50px;
+      width: 150px;
+      font-size: 18px;
+    }
+    
+  }
+  @media (max-width: 1550px){
+    .container{
+      padding: 0px 20px; 
+    }
+  }

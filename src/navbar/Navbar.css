@@ -1,0 +1,69 @@
+.Navbar {
+  width: 100vw;
+  height: 85px;
+  padding: 0px 20px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  position: relative;
+  z-index: 100;
+}
+
+.navbarContainer {
+  width: 100%;
+  height: 85px;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.932);
+}
+
+.navLimiter {
+  width: 100%;
+  max-width: var(--maxwidth);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.Leftside {
+  font-size: 20px;
+  display: flex;
+  color: #1b55c9;
+  font-family: "Mooli", sans-serif;
+}
+
+.Rightside {
+  height: 100%;
+  width: 100%;
+  max-width: var(--maxwidth);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+}
+
+.nav {
+  min-width: 300px;
+  display: flex;
+  gap: 100px;
+}
+
+.links {
+  font-size: 20px;
+  text-decoration: none;
+  color: rgb(190, 190, 185);
+}
+.links:hover {
+  color: #4972b1;
+}
+
+@media (max-width: 1550px){
+  .navbarContainer{
+    padding: 0px 20px; 
+  }
+  
+}

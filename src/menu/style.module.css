@@ -1,0 +1,35 @@
+.letra{
+    margin: 100px 0px;
+    /* padding: 50px 0px; */
+ font-size: 50px;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ color: #1b55c9;
+}
+.container{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0px;
+}
+.all{
+    height: 100%;
+    width: 100%;
+    max-width: var(--maxwidth);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+@media (max-width: 480px){
+.letra{
+    text-align: center;
+    
+}
+
+}
+

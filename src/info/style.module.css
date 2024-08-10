@@ -1,0 +1,88 @@
+.container {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0px; /* el primero indica arriba abajo y el segundo izq y der */
+    /* margin: 100px 0px */
+    /* el padding crece para adentro y el margin crece para afuera */
+  }
+  
+  .all {
+    width: 100%;
+    max-width: var(--maxwidth);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+  }
+  
+  .imagencostado {
+    width: 450px;
+    border-radius: 5%;
+  }
+  
+  .letras{
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .titulo {
+    max-width: 100%;
+    font-size: 42px;
+    color: #1b55c9;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  .parrafo {
+    font-size: 20px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  @media (max-width: 1550px) {
+    .container {
+      padding: 100px 20px;  /* poner en todos */
+    }         
+      
+    
+    
+  }
+  @media (max-width: 1100px) {
+    .all{
+      flex-direction: column-reverse;
+      justify-content: center;
+    }
+    .letras {
+        width: 100%;
+        height: auto;
+    }
+  }
+  @media (max-width: 650px) {
+    .letras {
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .titulo{
+      font-size: 35px;
+    }
+    .parrafo {
+      font-size: 16px;
+      
+    }
+    
+  }
+  @media (max-width: 500px){
+    .imagencostado {
+      width: 100%; 
+    }
+  }
+  
+  
