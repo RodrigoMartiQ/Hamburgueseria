@@ -7,7 +7,7 @@ function Navbar() {
       <div className={style.container}>
         <div className={style.navLimiter}>
           <div className={style.Leftside}>
-            <h1>Sensei</h1>
+            <h1>Samurai</h1>
           </div>
           <div className={style.Rightside}>
 

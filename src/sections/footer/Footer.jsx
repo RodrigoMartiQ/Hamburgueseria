@@ -5,8 +5,8 @@ function Footer() {
       <div className={style.container}>
         <div className={style.info}>
           <nav>
-            <a className={style.letrasensei} href="#navb">
-              Sensei
+            <a className={style.letrasamurai} href="#navb">
+            Samurai
             </a>
           </nav>
         </div>
@@ -25,7 +25,7 @@ function Footer() {
 
         <div className={style.info}>
           <h1>Contactanos</h1>
-          <p>Senseitinelli@gmail.com</p>
+          <p>Samuraitinelli@gmail.com</p>
           <p>351 3803800</p>
         </div>
       </div>
