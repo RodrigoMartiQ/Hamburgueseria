@@ -59,6 +59,7 @@
 }
 
 .abrirmenu {
+  
   display: none;
 }
 .cerrarmenu {
@@ -68,7 +69,12 @@
 @media (max-width: 860px) {
   .abrirmenu,
   .cerrarmenu {
+    cursor: pointer;
+    color: white;
     display: block;
+    border: 0;
+    font-size: 25px;
+    background-color: transparent;
   }
   .nav {
     opacity: 0;
@@ -86,6 +92,7 @@
     background-color: rgba(0, 0, 0, 0.973);
   }
   .cerrarmenu {
+    
     display: block;
     height: 55px;
     width: 55px;
