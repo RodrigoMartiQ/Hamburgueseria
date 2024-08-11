@@ -1,6 +1,7 @@
 import style from "./style.module.css";
+import React, { useState } from "react";
+function Navbar(){
 
-function Navbar() {
   return (
     <header className={style.Navbar}>
       <div id="navb" className={style.container}>
@@ -9,11 +10,14 @@ function Navbar() {
             <h1>Samurai</h1>
           </div>
           <div className={style.Rightside}>
-            <button className={style.abrirmenu} ><i class="bi bi-list"></i></button>
-
+            <button className={style.abrirmenu}>
+              <i class="bi bi-list"></i>
+            </button>
+            
             <nav className={style.nav}>
-              <button className={style.cerrarmenu}><i class="bi bi-x-lg"></i></button>
-
+              <button className={style.cerrarmenu}>
+                <i class="bi bi-x-lg"></i>
+              </button>
               <ul className={style.navlist}>
                 <li>
                   <a className={style.links} href="#inicio">
