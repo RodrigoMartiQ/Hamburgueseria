@@ -2,6 +2,12 @@ import style from "./style.module.css";
 import React, { useState } from "react";
 function Navbar(){
 
+  const[show,setShow] = useState (false)
+
+  const mostrarmenu = () => {
+    setShow (!show);
+  };
+
   return (
     <header className={style.Navbar}>
       <div id="navb" className={style.container}>
@@ -10,32 +16,34 @@ function Navbar(){
             <h1>Samurai</h1>
           </div>
           <div className={style.Rightside}>
-            <button className={style.abrirmenu}>
-              <i class="bi bi-list"></i>
-            </button>
             
-            <nav className={style.nav}>
-              <button className={style.cerrarmenu}>
+            
+            {show ? <nav className={style.nav}>
+              <button onClick={mostrarmenu} className={style.cerrarmenu}>
                 <i class="bi bi-x-lg"></i>
               </button>
               <ul className={style.navlist}>
-                <li>
+                <li onClick={mostrarmenu}>
                   <a className={style.links} href="#inicio">
                     Inicio
                   </a>
                 </li>
-                <li>
+                <li onClick={mostrarmenu}>
                   <a className={style.links} href="#menu">
                     Menu
                   </a>
                 </li>
-                <li>
+                <li onClick={mostrarmenu}>
                   <a className={style.links} href="#contactanos">
                     Contactanos
                   </a>
                 </li>
               </ul>
-            </nav>
+            </nav> : 
+            <div><button onClick={mostrarmenu} className={style.abrirmenu}>
+              <i class="bi bi-list"></i>
+            </button>
+            </div>}
           </div>
         </div>
       </div>
