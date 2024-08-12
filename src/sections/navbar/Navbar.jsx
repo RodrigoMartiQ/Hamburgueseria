@@ -1,11 +1,12 @@
 import style from "./style.module.css";
 import React, { useState } from "react";
-function Navbar(){
+function Navbar() {
 
-  const[show,setShow] = useState (false)
+  
+  const [menuOpen, setMenuOpen] = useState(false);
 
-  const mostrarmenu = () => {
-    setShow (!show);
+  const Desplegarmenu = () => {
+    setMenuOpen(!menuOpen);
   };
 
   return (
@@ -16,34 +17,40 @@ function Navbar(){
             <h1>Samurai</h1>
           </div>
           <div className={style.Rightside}>
-            
-            
-            {show ? <nav className={style.nav}>
-              <button onClick={mostrarmenu} className={style.cerrarmenu}>
+            <button
+              className={style.abrirmenu}
+              onClick={Desplegarmenu}
+              aria-label="Abrir menu">
+              <i class="bi bi-list"></i>
+            </button>
+
+             {/* las comillas hace que no se mezclen las clases style.nav con style.navOpen, sin las comillas quedaria style.navstyle.navOpen */}
+            <nav className={style.nav + " " + (menuOpen ? style.navOpen : "")}>
+              <button
+                className={style.cerrarmenu}
+                onClick={Desplegarmenu}
+                aria-label="Cerrar menu"
+              >
                 <i class="bi bi-x-lg"></i>
               </button>
               <ul className={style.navlist}>
-                <li onClick={mostrarmenu}>
+                <li onClick={Desplegarmenu}>
                   <a className={style.links} href="#inicio">
                     Inicio
                   </a>
                 </li>
-                <li onClick={mostrarmenu}>
+                <li onClick={Desplegarmenu}>
                   <a className={style.links} href="#menu">
                     Menu
                   </a>
                 </li>
-                <li onClick={mostrarmenu}>
+                <li onClick={Desplegarmenu}>
                   <a className={style.links} href="#contactanos">
                     Contactanos
                   </a>
                 </li>
               </ul>
-            </nav> : 
-            <div><button onClick={mostrarmenu} className={style.abrirmenu}>
-              <i class="bi bi-list"></i>
-            </button>
-            </div>}
+            </nav>
           </div>
         </div>
       </div>
