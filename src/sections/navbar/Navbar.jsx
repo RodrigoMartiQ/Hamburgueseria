@@ -1,8 +1,6 @@
 import style from "./style.module.css";
 import React, { useState } from "react";
 function Navbar() {
-
-  
   const [menuOpen, setMenuOpen] = useState(false);
 
   const Desplegarmenu = () => {
@@ -20,11 +18,12 @@ function Navbar() {
             <button
               className={style.abrirmenu}
               onClick={Desplegarmenu}
-              aria-label="Abrir menu">
+              aria-label="Abrir menu"
+            >
               <i class="bi bi-list"></i>
             </button>
 
-             {/* las comillas hace que no se mezclen las clases style.nav con style.navOpen, sin las comillas quedaria style.navstyle.navOpen */}
+            {/* las comillas hace que no se mezclen las clases style.nav con style.navOpen, sin las comillas quedaria style.navstyle.navOpen */}
             <nav className={style.nav + " " + (menuOpen ? style.navOpen : "")}>
               <button
                 className={style.cerrarmenu}

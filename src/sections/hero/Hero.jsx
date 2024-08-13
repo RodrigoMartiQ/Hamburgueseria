@@ -1,10 +1,14 @@
-import style from "./style.module.css"
+import style from "./style.module.css";
 
 function Hero() {
   return (
     <div id="inicio" className={style.container}>
       <div className={style.all}>
-        <img className={style.imagenhero} src="/imagenes/fondohero.jpg" alt="hero" />
+        <img
+          className={style.imagenhero}
+          src="/imagenes/fondohero.jpg"
+          alt="hero"
+        />
         <div className={style.letras}>
           <h1 className={style.titulo}>
             Nuestras hamburguesas son la mejor inversión en sabor.

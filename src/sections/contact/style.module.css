@@ -1,107 +1,101 @@
 .container {
-    height: auto;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    
-    
-  }
-  .all {
-    /* background-color: rgba(20, 20, 20, 0.308); */
-    border-radius: 2%;
-    width: 50%;
-    max-width: var(--maxwidth);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .letras{
-    display: flex;
-    align-content: center;
-    flex-direction: column;
-    align-items: center;
-  }
-  .titulo {
-    
-    padding: 50px 0px ;
-    font-size: 35px;
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-    color: #1b55c9;
-  }
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.all {
+  /* background-color: rgba(20, 20, 20, 0.308); */
+  border-radius: 2%;
+  width: 50%;
+  max-width: var(--maxwidth);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.letras {
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.titulo {
+  padding: 50px 0px;
+  font-size: 35px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: #1b55c9;
+}
+.subcripcion {
+  padding: 40px 0px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+.botonsub {
+  cursor: url("./public/imagenes/marce1.png"), auto;
+  border: #1b55c9;
+  color: white;
+  background-color: #1b55c9;
+  height: 80px;
+  width: 300px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+
+  font-size: 30px;
+  border-radius: 0px 20px 20px 0px;
+}
+.emailsub {
+  border-radius: 20px 00px 0px 20px;
+  height: 80px;
+  width: 500px;
+  font-size: 30px;
+}
+@media (max-width: 800px) {
   .subcripcion {
-    
-    padding: 40px 0px;
-    display: flex;
-    align-items: center;
-    align-content: center;
-  }
-  .botonsub {
-    cursor: url("./public/imagenes/marce1.png"), auto;
-    border: #1b55c9;
-    color: white;
-    background-color: #1b55c9;
-    height: 80px;
-    width: 300px;
-    font-family: Georgia, "Times New Roman", Times, serif;
-  
-    font-size: 30px;
-    border-radius: 0px 20px 20px 0px;
-  }
-  .emailsub {
-    border-radius: 20px 00px 0px 20px;
-    height: 80px;
-    width: 500px;
-    font-size: 30px;
-  }
-  @media (max-width: 800px){
-  
-  .subcripcion{
     width: 80%;
     height: 80%;
   }
+}
+@media (max-width: 640px) {
+  .botonsub {
+    height: 70px;
+    width: 150px;
+    font-size: 20px;
   }
-  @media (max-width: 640px){
-  
-    .botonsub { 
-      height: 70px;
-      width: 150px;
-      font-size: 20px;
-    }
-    .emailsub {
-      height: 70px;
-      width: 400px;
-      font-size: 23px;
-    }
-    .titulo {
-      width: 100%;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      flex-direction: column;
-    }
-    }
-    @media (max-width: 480px){
-      .titulo {
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        flex-direction: column;
-      }
-      .subcripcion{
-        display: flex;
-        justify-content: center;
-      }
-      .botonsub { 
-        height: 70px;
-        width: 100%;
-        font-size: 20px;
-      }
-      .emailsub {
-        height: 70px;
-        width: 300px;
-        font-size: 23px;
-      }
-      }
+  .emailsub {
+    height: 70px;
+    width: 400px;
+    font-size: 23px;
+  }
+  .titulo {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+  }
+}
+@media (max-width: 480px) {
+  .titulo {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+  }
+  .subcripcion {
+    display: flex;
+    justify-content: center;
+  }
+  .botonsub {
+    height: 70px;
+    width: 100%;
+    font-size: 20px;
+  }
+  .emailsub {
+    height: 70px;
+    width: 300px;
+    font-size: 23px;
+  }
+}
