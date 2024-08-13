@@ -26,9 +26,10 @@
     gap: 20px;
 }
 @media (max-width: 480px){
+
 .letra{
     text-align: center;
-    
+    font-size: 40px;
 }
 
 }

@@ -80,6 +80,15 @@
     
   }
   @media (max-width: 500px){
+
+    .parrafo{
+      font-size: 15px;
+    }
+    .titulo{
+      font-size: 28px;
+    }
+
+
     .imagencostado {
       width: 100%; 
     }

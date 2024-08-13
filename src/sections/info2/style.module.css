@@ -1,58 +1,62 @@
 .container {
-    height: auto;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* padding: 0px 0px; */
-  }
-  
-  .all {
-    height: 100%;
-    width: 100%;
-    max-width: var(--maxwidth);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 0px 0px; */
+}
+
+.all {
+  height: 100%;
+  width: 100%;
+  max-width: var(--maxwidth);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.imagencomidamesa {
+  height: auto;
+  min-height: 700px;
+  width: 100%;
+  background-image: linear-gradient(rgba(5, 7, 12, 0.6), rgba(5, 7, 12, 0.6)),
+    url("./public/imagenes/comidamesa.jpg");
+  border-radius: 3%;
+  background-color: black;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.letras {
+  width: 80%;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.titulo {
+  font-size: 40px;
+  color: white;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.parrafo {
+  font-size: 16px;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+@media (max-width: 1050px) {
   .imagencomidamesa {
-    height: auto;
-    min-height: 700px;
-    width: 100%;
-    background-image: linear-gradient(rgba(5, 7, 12, 0.6), rgba(5, 7, 12, 0.6)),
-      url("./public/imagenes/comidamesa.jpg");
-    border-radius: 3%;
-    background-color: black;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
+    background-position: center;
   }
-  .letras {
-    width: 80%;
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-    gap: 10px;
+}
+@media (max-width: 1550px) {
+  .container {
+    padding: 0px 20px;
   }
-  .titulo{
-    font-size: 40px;
-    color: white;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+@media screen and (max-width: 500px) {
+  .titulo {
+    font-size: 30px;
   }
-  .parrafo {
-    font-size: 16px;
-    color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-  }
-  @media (max-width: 1050px){
-    .imagencomidamesa{
-      background-position: center;
-    }
-  }
-  @media (max-width: 1550px){
-    .container{
-      padding: 0px 20px; 
-    }
-  }
+}
