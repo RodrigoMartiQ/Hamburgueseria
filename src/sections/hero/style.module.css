@@ -6,30 +6,29 @@
   align-items: center;
   margin-top: 85px;
 }
-
-.imagenhero {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  position: absolute;
-  max-width: var(--maxwidth);
-  top: 0;
-  left: 0;
-  z-index: -1;
-  border-radius: 0px 0px 50px 50px;
-}
-
 .all {
   width: 100%;
   height: 100%;
   max-width: var(--maxwidth);
-  border-radius: 0px 0px 40px 40px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   position: relative;
   padding: 0px 40px;
 }
+
+.imagenhero {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  border-radius: 0px 0px 50px 50px;
+}
+
+
 
 .letras {
   height: auto;

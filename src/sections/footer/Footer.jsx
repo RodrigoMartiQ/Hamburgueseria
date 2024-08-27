@@ -3,6 +3,7 @@ function Footer() {
   return (
     <footer className={style.footer}>
       <div className={style.container}>
+        
         <div className={style.info}>
           <nav>
             <a className={style.letrasamurai}>Samurai</a>
